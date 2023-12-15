@@ -4,7 +4,6 @@
 <%@ page import="bean.BangxepHangAggregate" %>
 <%@ page import="java.util.Collections" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--5. Hiểnthị giao diện--%>
 <!DOCTYPE html>
 <html lang=vi>
 <head>
@@ -98,7 +97,7 @@
         <div class=pad40>
 
             <header class=section-header>
-                <h1 class=title-club-page><%= AggregateService.getDataL().get(0).getTen_giai_dau()%></h1>
+                <h1 class=title-club-page><%= AggregateService.getDataV().get(0).getTen_giai_dau()%></h1>
             </header>
             <section class=section>
                 <aside class=sidebar-left>
@@ -109,11 +108,11 @@
                                 <a  href=index.jsp>Premier League</a>
                             </li>
                             <li>
-                                <a href=v_league.jsp>V-League</a>
+                                <a class=active href=v_league.jsp>V-League</a>
                             </li>
 
                             <li>
-                                <a class=active href=la_liga.jsp>La Liga</a>
+                                <a href=la_liga.jsp>La Liga</a>
                             </li>
 
                         </ul>
@@ -165,7 +164,7 @@
                                             </th>
                                             <th>5 trận gần nhất</th>
                                         </tr>
-                                        <% List<BangxepHangAggregate> teamsList = AggregateService.getDataL();
+                                        <% List<BangxepHangAggregate> teamsList = AggregateService.getDataV();
                                             for ( BangxepHangAggregate t: teamsList) {
                                         %>
 
