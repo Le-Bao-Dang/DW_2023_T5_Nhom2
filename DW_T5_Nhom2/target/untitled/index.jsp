@@ -4,7 +4,6 @@
 <%@ page import="bean.BangxepHangAggregate" %>
 <%@ page import="java.util.Collections" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--5. Hiểnthị giao diện--%>
 <!DOCTYPE html>
 <html lang=vi>
 <head>
@@ -98,7 +97,7 @@
         <div class=pad40>
 
             <header class=section-header>
-                <h1 class=title-club-page><%= AggregateService.getDataL().get(0).getTen_giai_dau()%></h1>
+                <h1 class=title-club-page><%= AggregateService.getData().get(0).getTen_giai_dau()%></h1>
             </header>
             <section class=section>
                 <aside class=sidebar-left>
@@ -106,14 +105,14 @@
                         <div class=name-gx>Giải đấu</div>
                         <ul class=ul-sbar>
                             <li>
-                                <a  href=index.jsp>Premier League</a>
+                                <a class=active href=index.jsp>Premier League</a>
                             </li>
                             <li>
                                 <a href=v_league.jsp>V-League</a>
                             </li>
 
                             <li>
-                                <a class=active href=la_liga.jsp>La Liga</a>
+                                <a href=la_liga.jsp>La Liga</a>
                             </li>
 
                         </ul>
@@ -134,7 +133,7 @@
                                     <div class=item-fright>
 
                                         <a title="Ngày cập nhật" href="">Ngày cập nhật: <%=date%> </a>
-                                        <%--                                          <a title="Ngày cập nhật" href="">Ngày cập nhật: </a>--%>
+<%--                                          <a title="Ngày cập nhật" href="">Ngày cập nhật: </a>--%>
                                     </div>
                                 </div>
 
@@ -165,7 +164,7 @@
                                             </th>
                                             <th>5 trận gần nhất</th>
                                         </tr>
-                                        <% List<BangxepHangAggregate> teamsList = AggregateService.getDataL();
+                                        <% List<BangxepHangAggregate> teamsList = AggregateService.getData();
                                             for ( BangxepHangAggregate t: teamsList) {
                                         %>
 
@@ -198,11 +197,15 @@
                                                         }
                                                     }
                                                 %>
+
+                                            <%--                                                <span title="Dự vòng bảng Champions League" class="ranknum rank1"><%=t.getHang()%></span>--%>
+<%--                                                <span title="Dự vòng bảng Champions League" class="ranknum rank2">2</span>&ndash;%&gt;--%>
+<%--                                                <span title="Xuống hạng Championship" class="ranknum rank18">18</span>&ndash;%&gt;--%>
                                             </td>
                                             <td>
                                                 <a class=link-clb href=/clubs/tottenham-5.html>
-                                                    <%--                                                    <img class=bxhclb-icon alt=Tottenham src=https://static.bongda24h.vn/Medias/icon/2020/7/23/Totenham.png>Tottenham--%>
-                                                    <img class=bxhclb-icon alt=Tottenham src=<%=t.getLogo()%>><%=t.getTen_doi_bong()%>
+<%--                                                    <img class=bxhclb-icon alt=Tottenham src=https://static.bongda24h.vn/Medias/icon/2020/7/23/Totenham.png>Tottenham--%>
+                                                   <img class=bxhclb-icon alt=Tottenham src=<%=t.getLogo()%>><%=t.getTen_doi_bong()%>
                                                 </a>
                                             </td>
                                             <td><%=t.getSo_tran()%></td>
@@ -213,18 +216,18 @@
                                             <td><%=t.getDiem()%></td>
                                             <td>
                                                 <% for (String i: t.getNam_tran_gan_nhat().split("")){
-                                                    if(i.equals("H")) {
+                                                        if(i.equals("H")) {
                                                 %>
 
                                                 <span class="bg-color bgyelow" title=Hòa>H</span>
                                                 <%}
-                                                    if(i.equals("T")){%>
+                                                if(i.equals("T")){%>
                                                 <span class="bg-color bggreen" title=Thắng>T</span>
                                                 <%} if(i.equals("B")){%>
-                                                <span class="bg-color bgred" title=Thắng>B</span>
+                                                <span class="bg-color bgred" title=Bại>B</span>
                                                 <%}%>
-                                                <%--                                                <span class="bg-color bggreen" title=Thắng>T</span>--%>
-                                                <%--                                                <span class="bg-color bggreen" title=Thắng>T</span>--%>
+<%--                                                <span class="bg-color bggreen" title=Thắng>T</span>--%>
+<%--                                                <span class="bg-color bggreen" title=Thắng>T</span>--%>
                                                 <%}%>
                                             </td>
                                         </tr>
@@ -239,7 +242,7 @@
                         </div>
 
 
-                        <%--                        ///////////////////////////////////////////////--%>
+<%--                        ///////////////////////////////////////////////--%>
                         <div class=color-info>
                             <div class=itemcolor>
                                 <span class="bgcolor rank1"></span>
@@ -288,7 +291,7 @@
                 <img class="logo-address lazyload" alt=img-app src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src=https://cdn.bongda24h.vn/images/logo-bongda24h.svg width=138 height=50>
             </a>
             <div class=footer-address>
-                <p></p>
+               <p></p>
                 <p>Nhóm 2 thực hiện:</p>
                 <p>Lê Bảo Đặng – 20130010</p>
                 <p>Hà Huy Dũng – 20130235</p>

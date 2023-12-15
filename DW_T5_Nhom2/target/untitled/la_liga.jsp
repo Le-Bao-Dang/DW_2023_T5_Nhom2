@@ -4,7 +4,6 @@
 <%@ page import="bean.BangxepHangAggregate" %>
 <%@ page import="java.util.Collections" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--5. Hiểnthị giao diện--%>
 <!DOCTYPE html>
 <html lang=vi>
 <head>
