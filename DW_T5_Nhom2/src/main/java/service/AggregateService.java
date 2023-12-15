@@ -13,7 +13,7 @@ public class AggregateService {
     public static List<BangxepHangAggregate> getData(){
         return JDBIConnector.getMartJdbi().withHandle(handle ->{
             //2. Thực hiện truy vấn để lấy dữ liệu từ bảng aggregate cho Ngoại hạng Anh và ngày hiện tại
-            return handle.createQuery("SELECT * FROM aggregate where ten_giai_dau= '"+"Bảng xếp hạng bóng đá Anh- BXH Ngoại hạng Anh 2023/2024"+"' and ngay= '"+ LocalDate
+            return handle.createQuery("SELECT * FROM aggregate where ten_giai_dau= '"+"BXH Ngoại hạng Anh (Mùa 2023/2024)"+"' and ngay= '"+ LocalDate
                             .now()+"'")
                     .mapToBean(BangxepHangAggregate.class).stream().collect(Collectors.toList());
         } );
@@ -21,7 +21,7 @@ public class AggregateService {
     public static List<BangxepHangAggregate> getDataV(){
         return JDBIConnector.getMartJdbi().withHandle(handle ->{
             // 3.Thực hiện truy vấn để lấy dữ liệu từ bảng aggregate cho V-League và ngày hiện tại
-            return handle.createQuery("SELECT * FROM aggregate where ten_giai_dau= '"+"Bảng xếp hạng V-League 2023/2024 - Bảng xếp hạng bóng đá Việt Nam"+"' and ngay= '"+ LocalDate
+            return handle.createQuery("SELECT * FROM aggregate where ten_giai_dau= '"+"BXH V-League (Mùa 2023/2024)"+"' and ngay= '"+ LocalDate
                             .now()+"'")
                     .mapToBean(BangxepHangAggregate.class).stream().collect(Collectors.toList());
         } );
@@ -29,7 +29,7 @@ public class AggregateService {
     public static List<BangxepHangAggregate> getDataL(){
         return JDBIConnector.getMartJdbi().withHandle(handle ->{
             // 4.Thực hiện truy vấn để lấy dữ liệu từ bảng aggregate cho La Liga và ngày hiện tại
-            return handle.createQuery("SELECT * FROM aggregate where ten_giai_dau= '"+"Bảng xếp hạng bóng đá Tây Ban Nha - bxh La Liga hôm nay"+"' and ngay= '"+ LocalDate
+            return handle.createQuery("SELECT * FROM aggregate where ten_giai_dau= '"+"BXH La Liga (Mùa 2023/2024)"+"' and ngay= '"+ LocalDate
                             .now()+"'")
                     .mapToBean(BangxepHangAggregate.class).stream().collect(Collectors.toList());
         } );

@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 public class LoadDataToMart {
     // Thực hiện quá trình ETL (Extract, Transform, Load)
-    private static void performETL() {
+    public static void performETL() {
 //     2.Kết nối Database Mart và Fact
         // 3. Lấy đối tượng Jdbi cho cơ sở dữ liệu Mart
         Jdbi jdbiMart = JDBIConnector.getMartJdbi();
