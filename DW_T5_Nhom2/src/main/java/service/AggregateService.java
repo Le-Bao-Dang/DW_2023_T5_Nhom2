@@ -39,7 +39,7 @@ public class AggregateService {
 
     public  static  LocalDate getDate(){
         // Lấy ngày từ dữ liệu mart
-        return LocalDate.parse(getData().get(0).getNgay());
+        return getData().get(0).getNgay();
     }
 
     public static void main(String[] args) {

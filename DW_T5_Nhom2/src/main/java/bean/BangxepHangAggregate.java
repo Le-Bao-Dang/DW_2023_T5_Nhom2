@@ -1,6 +1,7 @@
 package bean;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 public class BangxepHangAggregate implements Serializable {
     int id;
@@ -15,14 +16,14 @@ public class BangxepHangAggregate implements Serializable {
     int diem;
     String nam_tran_gan_nhat;
     String ten_giai_dau;
-    String ngay;
+    LocalDate ngay;
 
 
     public BangxepHangAggregate() {
 
     }
 
-    public BangxepHangAggregate(int id, int hang, String logo, String ten_doi_bong, int so_tran, int tran_thang, int tran_hoa, int tran_thua, int he_so, int diem, String nam_tran_gan_nhat, String ten_giai_dau, String ngay) {
+    public BangxepHangAggregate(int id, int hang, String logo, String ten_doi_bong, int so_tran, int tran_thang, int tran_hoa, int tran_thua, int he_so, int diem, String nam_tran_gan_nhat, String ten_giai_dau, LocalDate ngay) {
         this.id = id;
         this.hang = hang;
         this.logo = logo;
@@ -133,11 +134,11 @@ public class BangxepHangAggregate implements Serializable {
     public void setTen_giai_dau(String ten_giai_dau) {
         this.ten_giai_dau = ten_giai_dau;
     }
-    public String getNgay() {
+    public LocalDate getNgay() {
         return ngay;
     }
 
-    public void setNgay(String ngay) {
+    public void setNgay(LocalDate ngay) {
         this.ngay = ngay;
     }
 

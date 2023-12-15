@@ -60,7 +60,7 @@ public class LoadDataToMart {
         // Lặp qua dữ liệu kết quả và chèn vào database Mart
         for (BangxepHangAggregate row : resultData) {
             // Chuyển đổi chuỗi ngày thành LocalDate bằng định dạng đã xác định
-            LocalDate ngay = convertToDate(row.getNgay());
+//            LocalDate ngay = convertToDate(row.getNgay());
             // Thực hiện câu truy vấn SQL để chèn dữ liệu
          i=   handle.createUpdate(loadQueryAggregateMart)
                     .bind(0, row.getHang())
@@ -74,7 +74,7 @@ public class LoadDataToMart {
                     .bind(8,row.getDiem())
                     .bind(9,row.getNam_tran_gan_nhat())
                     .bind(10,row.getTen_giai_dau())
-                    .bind(11,ngay)
+                    .bind(11,row.getNgay())
                     .execute();
 
         }
