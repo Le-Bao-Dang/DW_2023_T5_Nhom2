@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class LoadDataToAggregate {
-    private static void performETL() {
+    public static void performETL() {
         // kết nối với dataFact
         Jdbi jdbiFact = JDBIConnector.getFactJdbi();
 

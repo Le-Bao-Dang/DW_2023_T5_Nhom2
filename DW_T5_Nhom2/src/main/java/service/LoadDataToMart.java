@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 public class LoadDataToMart {
     // Thực hiện quá trình ETL (Extract, Transform, Load)
-    private static void performETL() {
+    public static void performETL() {
 //     2.Kết nối Database Mart và Fact
         // 3. Lấy đối tượng Jdbi cho cơ sở dữ liệu Mart
         Jdbi jdbiMart = JDBIConnector.getMartJdbi();
@@ -60,7 +60,7 @@ public class LoadDataToMart {
         // Lặp qua dữ liệu kết quả và chèn vào database Mart
         for (BangxepHangAggregate row : resultData) {
             // Chuyển đổi chuỗi ngày thành LocalDate bằng định dạng đã xác định
-//            LocalDate ngay = convertToDate(row.getNgay());
+            LocalDate ngay = convertToDate(row.getNgay());
             // Thực hiện câu truy vấn SQL để chèn dữ liệu
          i=   handle.createUpdate(loadQueryAggregateMart)
                     .bind(0, row.getHang())
@@ -74,7 +74,7 @@ public class LoadDataToMart {
                     .bind(8,row.getDiem())
                     .bind(9,row.getNam_tran_gan_nhat())
                     .bind(10,row.getTen_giai_dau())
-                    .bind(11,row.getNgay())
+                    .bind(11,ngay)
                     .execute();
 
         }

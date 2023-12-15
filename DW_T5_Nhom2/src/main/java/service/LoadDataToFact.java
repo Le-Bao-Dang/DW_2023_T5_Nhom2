@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class LoadDataToFact {
 
-    private static void performETL() {
+    public static void performETL() {
         Jdbi jdbiStaging = JDBIConnector.getStagingJdbi();
         Jdbi jdbiFact = JDBIConnector.getFactJdbi();
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="DW_T5_Nhom2:war" />
+      <artifact name="DW_T5_Nhom2:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,40 +10,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="baa130a4-d6d8-4c8c-9be6-c938b67ab289" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DW_T5_Nhom2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/DW_T5_Nhom2_jar/DW_T5_Nhom2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/BangxepHangAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/BangxepHangAggregate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/AggregateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/AggregateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToFact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToMart.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToMart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBFact.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBFact.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBMart.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBMart.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBFact.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBFact.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBMart.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBMart.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBControl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBControl.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBStaging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBStaging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBControl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBControl.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBStaging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBStaging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BXHfact.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BXHfact.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BangxepHangAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BangxepHangAggregate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/FileData.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/FileData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Log.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/DBProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/DBProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/JDBIConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/JDBIConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/filter/UTF8.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/filter/UTF8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Doibongdim.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Doibongdim.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Giaidaudim.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Giaidaudim.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/AggregateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/AggregateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ConfigService.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ConfigService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToAggregate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToFact.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToFact.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToMart.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToMart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ScriptCrawData.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ScriptCrawData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ScriptLoadDataToStaging.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ScriptLoadDataToStaging.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled.war" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/BangxepHangAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/BangxepHangAggregate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/db/JDBIConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/db/JDBIConnector.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/AggregateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/AggregateService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToMart.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToMart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/la_liga.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/la_liga.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/v_league.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/v_league.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,24 +78,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.AggregateService">
+}]]></component>
+  <component name="RunManager" selected="Application.LoadDataToMart">
     <configuration name="AggregateService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="service.AggregateService" />
+      <module name="DW_T5_Nhom2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoadDataToAggregate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="service.LoadDataToAggregate" />
+      <module name="DW_T5_Nhom2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoadDataToFact" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="service.LoadDataToFact" />
       <module name="DW_T5_Nhom2" />
       <extension name="coverage">
         <pattern>
@@ -115,8 +149,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScriptCrawData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="service.ScriptCrawData" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="service.main" />
       <module name="DW_T5_Nhom2" />
       <extension name="coverage">
         <pattern>
@@ -216,16 +250,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.LoadDataToAggregate" />
+      <item itemvalue="Application.LoadDataToFact" />
+      <item itemvalue="Application.main" />
       <item itemvalue="Application.AggregateService" />
       <item itemvalue="Application.LoadDataToMart" />
-      <item itemvalue="Application.ScriptCrawData" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.68" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AggregateService" />
         <item itemvalue="Application.LoadDataToMart" />
-        <item itemvalue="Application.ScriptCrawData" />
+        <item itemvalue="Application.LoadDataToAggregate" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.AggregateService" />
+        <item itemvalue="Application.LoadDataToFact" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +277,7 @@
       <updated>1702611209726</updated>
       <workItem from="1702611212789" duration="2699000" />
       <workItem from="1702614565887" duration="2485000" />
-      <workItem from="1702623560248" duration="603000" />
+      <workItem from="1702623560248" duration="4927000" />
     </task>
     <servers />
   </component>
