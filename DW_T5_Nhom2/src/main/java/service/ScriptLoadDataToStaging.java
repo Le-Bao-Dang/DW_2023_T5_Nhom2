@@ -19,7 +19,7 @@ import java.util.List;
 public class ScriptLoadDataToStaging {
     public static void loadDataToStaging() {
         FileData fileData;
-//        1. kết nối control database
+        //        1. kết nối control database
         List<Config> list = ConfigService.getInstance().getListConfig();
         try (Handle handle = JDBIConnector.getStagingJdbi().open()) {
             handle.createUpdate("TRUNCATE TABLE staging")
@@ -27,8 +27,9 @@ public class ScriptLoadDataToStaging {
         }
 //        2. duyệt qua từng dòng dữ liệu trong bản config
         for (Config config : list) {
-            LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + " Bắt đầu trích xuất dữ liệu từ file vào staging", "EXTRACTING"));
-            fileData = ConfigService.getInstance().getFileDataToDay(config.getId());
+            LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + " Bắt đầu trích xuất dữ liệu từ file vào staging",
+                    "EXTRACTING"));
+            fileData = ConfigService.getInstance().getFileDataToDay(config.getId(), "CRAWL DATA");
             if (fileData != null || fileData.getStatus() == 2) {
                 ConfigService.getInstance().setstatusFileData(ConfigService.EXTRACTING, fileData.getId());
                 loadDataformFileToStaging(config.getName(), config.getSource_path(), config.getFile_format(), LocalDate.now(), fileData.getId());

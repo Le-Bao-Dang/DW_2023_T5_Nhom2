@@ -48,9 +48,9 @@ public class ConfigService {
         });
     }
 
-    public FileData getFileDataToDay(int configId) {
+    public FileData getFileDataToDay(int configId, String name) {
         return JDBIConnector.getControlJdbi().withHandle(handle -> {
-            List<FileData> list = handle.createQuery("SELECT f.id,f.name, f.date_range_from, f.date_range_to,f.create_at,f.create_by,f.note, f.status from file_data f join config c on c.id = f.config_id where f.date_range_to = "+"'" + LocalDate.now() +"'" +"  and c.id= " + configId).mapToBean(FileData.class).stream().toList();
+            List<FileData> list = handle.createQuery("SELECT f.id,f.name, f.date_range_from, f.date_range_to,f.create_at,f.create_by,f.note, f.status from file_data f join config c on c.id = f.config_id where f.date_range_to = "+"'" + LocalDate.now() +"'" +"  and c.id= " + configId +" and f.name="+"'"+ name +"'").mapToBean(FileData.class).stream().toList();
             if (list.size() != 1) {
                 return null;
             }

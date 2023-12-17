@@ -1,32 +1,68 @@
 package service;
 
+import bean.Config;
+import bean.FileData;
+import bean.Log;
 import db.JDBIConnector;
 import org.jdbi.v3.core.Handle;
 import org.jdbi.v3.core.Jdbi;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class LoadDataToAggregate {
-    private static void performETL() {
-        // kết nối với dataFact
+    public static void performETL() {
+        //14. Kết nối với các cơ sở dữ liệu Control,  Fact
         Jdbi jdbiFact = JDBIConnector.getFactJdbi();
-
+        List<Config> list = ConfigService.getInstance().getListConfig();
+        FileData fileDataFact, fileDataAgg;
+        ArrayList<Map<String, Object>> result;
         try (Handle factHandle = jdbiFact.open()) {
-            // Xử lý dữ liệu cũ và Truncate các bảng trước khi nạp dữ liệu mới
-            factHandle.createUpdate("TRUNCATE TABLE bang_xep_hang_aggregate").execute();
+            for(Config config : list) {
+                //15. Xử lý dữ liệu cũ và Truncate các bảng trước khi nạp dữ liệu mới
+                factHandle.createUpdate("TRUNCATE TABLE bang_xep_hang_aggregate").execute();
+                //16. Ghi log table " Bắt đầu trích xuất dữ liệu từ Fact vào Agggregate"
+                LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + " Bắt đầu trích xuất dữ liệu từ Fact vào Agggregate",
+                        "EXTRACTING"));
+                fileDataFact = ConfigService.getInstance().getFileDataToDay(config.getId(), "ETL DATA");
+                fileDataAgg = ConfigService.getInstance().getFileDataToDay(config.getId(), "LOAD DATA TO AGG");
+                //17. Kiểm tra sự tồn tại và trạng thái của quá trình "ETL DATA" trong file_data table
+                if(fileDataFact!= null && fileDataFact.getStatus()==4) {
+                    //18. Thực thi trích xuất dữ liệu
+                    result = extractDataFromFact(factHandle);
+                    //19. Kiểm tra sự tồn tại và trạng thái  của quá trình "ETL DATA" trong file_data table
+                    if(fileDataAgg != null && fileDataAgg.getStatus() != 4){
+                        //20. Cập nhật trạng thái LOADED của "LOAD DATA TO AGG" trong file_data table
+                    ConfigService.getInstance().setstatusFileData(ConfigService.LOADED, fileDataAgg.getId());
+                    }else if(fileDataAgg == null){
+                        //21. Tạo dòng mới và set trạng thái LOADED cho nó trong file_data table
+                        fileDataAgg = new FileData(1, config, "LOAD DATA TO AGG", LocalDate.now(), LocalDate.now(),
+                                LocalDateTime.now(), "Dũng", "Load dữ liệu từ Fact vào Agggregate", ConfigService.LOADED);
+                        ConfigService.getInstance().insertFileData(fileDataAgg);
+                    }
+                    //22. Ghi log table "Load dữ liệu vào Agggregate thành công"
+                    LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + " Load dữ liệu vào Agggregate thành công",
+                            "LOADED"));
 
-            ArrayList<Map<String, Object>> result = extractDataFromFact(factHandle);
-            
-            transformAndLoadDataIntoAggregate(result, factHandle);
-
-            System.out.println("Quá trình ETL thành công.");
+                    if(result != null){
+                        //23. Gọi hàm transform và load từ Fact vào Aggregate
+                    transformAndLoadDataIntoAggregate(result, factHandle);}
+                }else {
+                    //24. Ghi log table "Load dữ liệu vào Agggregate thất bại"
+                    LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + " Load dữ liệu vào Agggregate thất bại",
+                            "FAILED"));
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     private static void transformAndLoadDataIntoAggregate(ArrayList<Map<String, Object>> result, Handle factHandle) {
+        //23.1 Thực thi chèn dữ liệu vào Aggregate
         for (Map<String, Object> row : result) {
             String fullTime = (String) row.get("full_date");
             factHandle.createUpdate("INSERT INTO bang_xep_hang_aggregate (hang, ten_doi_bong, logo, " +
