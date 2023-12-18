@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="DW_T5_Nhom2:jar" />
+      <artifact name="DW_T5_Nhom2:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,33 +10,232 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="baa130a4-d6d8-4c8c-9be6-c938b67ab289" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DW_T5_Nhom2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/DW_T5_Nhom2_jar/DW_T5_Nhom2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/bean/BXHfact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/bean/BangxepHangAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/bean/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/bean/Doibongdim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/bean/FileData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/bean/Giaidaudim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/bean/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/bean/Thoigiandim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/db/DBConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/db/DBProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/db/JDBIConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/filter/UTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/AggregateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/ConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/CrawData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/ExtractDataToStaging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/LoadDataToAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/LoadDataToFact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/LoadDataToMart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/LogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/java/service/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/resources/DBControl.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/resources/DBFact.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/resources/DBMart.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/resources/DBStaging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/webapp/la_liga.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/webapp/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/src/main/webapp/v_league.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/DBControl.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/DBFact.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/DBMart.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/DBStaging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/bean/BXHfact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/bean/BangxepHangAggregate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/bean/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/bean/Doibongdim.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/bean/FileData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/bean/Giaidaudim.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/bean/Log.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/bean/Thoigiandim.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/db/DBConnect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/db/DBProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/db/JDBIConnector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/filter/UTF8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/AggregateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/ConfigService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/LoadDataToAggregate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/LoadDataToFact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/LoadDataToMart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/LogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/ScriptCrawData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/ScriptLoadDataToStaging.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/classes/service/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/DBControl.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/DBFact.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/DBMart.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/DBStaging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/bean/BXHfact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/bean/BangxepHangAggregate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Doibongdim.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/bean/FileData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Giaidaudim.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Log.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Thoigiandim.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/db/DBConnect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/db/DBProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/db/JDBIConnector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/filter/UTF8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/AggregateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/ConfigService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToAggregate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToFact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToMart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/LogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/ScriptCrawData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/ScriptLoadDataToStaging.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/classes/service/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/caffeine-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/commons-collections-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/commons-collections4-4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/commons-lang3-3.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/commons-text-1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/geantyref-1.3.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/jdbi3-core-3.36.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/jsoup-1.15.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/logback-classic-1.2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/logback-core-1.2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/mysql-connector-java-8.0.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/opencsv-5.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/protobuf-java-3.11.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/lib/slf4j-api-1.7.36.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/la_liga.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DW_2023_T5_Nhom2/target/untitled/v_league.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/BangxepHangAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/BangxepHangAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/AggregateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/AggregateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToFact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToMart.java" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToMart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBControl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBControl.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBStaging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBStaging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBControl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBControl.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBStaging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBStaging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BXHfact.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BXHfact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BangxepHangAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BangxepHangAggregate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Doibongdim.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Doibongdim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Giaidaudim.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Giaidaudim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/AggregateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/AggregateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToAggregate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToFact.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToFact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToMart.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToMart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled.war" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/BangxepHangAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/BangxepHangAggregate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/db/JDBIConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/db/JDBIConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/AggregateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/AggregateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToMart.class" beforeDir="false" afterPath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToMart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/BXHfact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/BangxepHangAggregate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/Doibongdim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/FileData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/Giaidaudim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/Log.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/bean/Thoigiandim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/db/DBConnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/db/DBProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/db/JDBIConnector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/filter/UTF8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/AggregateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/ConfigService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToAggregate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToFact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LoadDataToMart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/LogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/ScriptCrawData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/ScriptLoadDataToStaging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/java/service/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBControl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBFact.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBMart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/DBStaging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/webapp/la_liga.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/webapp/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/src/main/webapp/v_league.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBControl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBFact.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBMart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/DBStaging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BXHfact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/BangxepHangAggregate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Doibongdim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/FileData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Giaidaudim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/bean/Thoigiandim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/DBProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/db/JDBIConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/filter/UTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/AggregateService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ConfigService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToAggregate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToFact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LoadDataToMart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/LogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ScriptCrawData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/ScriptLoadDataToStaging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/classes/service/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/DBControl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/DBFact.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/DBMart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/DBStaging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/BXHfact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/BangxepHangAggregate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Doibongdim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/FileData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Giaidaudim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/bean/Thoigiandim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/db/DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/db/DBProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/db/JDBIConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/filter/UTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/AggregateService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/ConfigService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToAggregate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToFact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/LoadDataToMart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/LogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/ScriptCrawData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/ScriptLoadDataToStaging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/classes/service/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/caffeine-3.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/commons-beanutils-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/commons-collections4-4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/commons-lang3-3.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/commons-text-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/geantyref-1.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/jdbi3-core-3.36.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/jsoup-1.15.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/logback-classic-1.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/logback-core-1.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/mysql-connector-java-8.0.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/opencsv-5.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/lib/slf4j-api-1.7.36.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/la_liga.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DW_T5_Nhom2/target/untitled/v_league.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,25 +277,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.LoadDataToMart">
+}</component>
+  <component name="RunManager" selected="Application.main">
     <configuration name="AggregateService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="service.AggregateService" />
       <module name="DW_T5_Nhom2" />
@@ -259,10 +458,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoadDataToMart" />
-        <item itemvalue="Application.LoadDataToAggregate" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.AggregateService" />
+        <item itemvalue="Application.LoadDataToMart" />
+        <item itemvalue="Application.LoadDataToAggregate" />
         <item itemvalue="Application.LoadDataToFact" />
       </list>
     </recent_temporary>
@@ -277,7 +476,10 @@
       <updated>1702611209726</updated>
       <workItem from="1702611212789" duration="2699000" />
       <workItem from="1702614565887" duration="2485000" />
-      <workItem from="1702623560248" duration="4927000" />
+      <workItem from="1702623560248" duration="9429000" />
+      <workItem from="1702794153022" duration="2796000" />
+      <workItem from="1702880051359" duration="21000" />
+      <workItem from="1702880085594" duration="79000" />
     </task>
     <servers />
   </component>
