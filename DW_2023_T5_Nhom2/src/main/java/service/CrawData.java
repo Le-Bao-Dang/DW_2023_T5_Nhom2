@@ -25,7 +25,7 @@ public class CrawData {
         // 4. Lấy từng dòng file trong bảng config
         for (Config c : list) {
             System.out.println(c.getId());
-            fileData = ConfigService.getInstance().getFileDataToDay(c.getId());
+            fileData = ConfigService.getInstance().getFileDataToDay(c.getId(),"CRAWL DATA");
             //5. kiểm tra đã có dữ liệu trong bảng file_data
             if (fileData == null) { // Nếu chưa có file_data thì thêm file_data vào
                 // Thêm vào log bắt đầu nạp dữ liệu

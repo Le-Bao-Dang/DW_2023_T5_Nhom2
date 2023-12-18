@@ -7,5 +7,6 @@ public class main {
         LoadDataToFact.performETL();
         LoadDataToAggregate.performETL();
         LoadDataToMart.performETL();
+
     }
 }

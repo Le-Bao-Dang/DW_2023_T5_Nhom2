@@ -1,7 +1,6 @@
 package bean;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public class BangxepHangAggregate implements Serializable {
     int id;
