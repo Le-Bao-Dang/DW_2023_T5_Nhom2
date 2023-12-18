@@ -35,7 +35,7 @@ public class LoadDataToFact {
                 //3. Ghi Log table "Bắt đầu trích xuất dữ liệu"
                 LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + " Bắt đầu trích xuất dữ liệu từ Staging vào Fact",
                         "EXTRACTING"));
-                fileData = ConfigService.getInstance().getFileDataToDay(config.getId(), "CRAWL DATA");
+                fileData = ConfigService.getInstance().getFileDataToDay(config.getId(), "EXTRACT DATA");
                 fileDataFact = ConfigService.getInstance().getFileDataToDay(config.getId(), "ETL DATA");
                 //4. Kiểm tra sự tồn tại và trạng thái  của quá trình "CRAWL DATA" trong file_data table
                 if (fileData != null && fileData.getStatus() == 3) {

@@ -19,6 +19,7 @@ import java.util.List;
 public class ExtractDataToStaging {
     public static void loadDataToStaging() {
         FileData fileData;
+        FileData fileDataSta;
         //        1. kết nối control database
         List<Config> list = ConfigService.getInstance().getListConfig();
         try (Handle handle = JDBIConnector.getStagingJdbi().open()) {
@@ -30,12 +31,21 @@ public class ExtractDataToStaging {
             LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + " Bắt đầu trích xuất dữ liệu từ file vào staging",
                     "EXTRACTING"));
             fileData = ConfigService.getInstance().getFileDataToDay(config.getId(), "CRAWL DATA");
-            if (fileData != null || fileData.getStatus() == 2) {
-                ConfigService.getInstance().setstatusFileData(ConfigService.EXTRACTING, fileData.getId());
-                loadDataformFileToStaging(config.getName(), config.getSource_path(), config.getFile_format(), LocalDate.now(), fileData.getId());
-                LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + "Trích xuất dữ liệu thành công", "EXTRACTED"));
+            fileDataSta = ConfigService.getInstance().getFileDataToDay(config.getId(), "EXTRACT DATA");
+            if (fileData != null && fileData.getStatus() == 2) {
+                if (fileDataSta == null) {
+                    fileDataSta = new FileData(1, config, "EXTRACT DATA", LocalDate.now(), LocalDate.now(), LocalDateTime.now(), "Đặng", "trích xuất dữ liệu từ file", ConfigService.PREPARE);
+                    ConfigService.getInstance().insertFileData(fileDataSta);
+                    continue;
+                }
+                if (fileDataSta != null || fileDataSta.getStatus() != -3) {
+                    ConfigService.getInstance().setstatusFileData(ConfigService.EXTRACTING, fileDataSta.getId());
+                    loadDataformFileToStaging(config.getName(), config.getSource_path(), config.getFile_format(), LocalDate.now(), fileDataSta.getId());
+                    ConfigService.getInstance().setstatusFileData(ConfigService.EXTRACTED, fileDataSta.getId());
+                    LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + "Trích xuất dữ liệu thành công", "EXTRACTED"));
+                }
             } else {
-                LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + "Trích xuất dữ liệu thất bại", "FAILED"));
+                LogService.getInstance().addLog(new Log(1, LocalDateTime.now(), config.getName() + "Dữ liệu không sẳn sàn để trích xuất", "FAILED"));
             }
         }
     }
