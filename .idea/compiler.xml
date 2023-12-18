@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DW_T5_Nhom2" target="17" />
+      <module name="DW_T5_Nhom2" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>
