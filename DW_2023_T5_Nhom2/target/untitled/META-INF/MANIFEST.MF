@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+<<<<<<< HEAD
+Built-By: hadun
+Build-Jdk: Oracle OpenJDK version 21.0.1
+=======
+Built-By: dangl
+Build-Jdk: 17.0.6
+>>>>>>> main
+
