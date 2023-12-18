@@ -17,7 +17,9 @@ public class LoadDataToMart {
 
     // Thực hiện quá trình ETL (Extract, Transform, Load)
     public static void performETL() {
-//     2.Kết nối Database Mart và Fact
+        // 1. Kết nối Database Control
+        List<Config> list = ConfigService.getInstance().getListConfig();
+        //2.Kết nối Database Mart và Fact
         // 3. Lấy đối tượng Jdbi cho cơ sở dữ liệu Mart
         Jdbi jdbiMart = JDBIConnector.getMartJdbi();
         // 4. Lấy đối tượng Jdbi cho cơ sở dữ liệu Fact
@@ -25,8 +27,7 @@ public class LoadDataToMart {
 
         try (Handle martHandle = jdbiMart.open(); Handle factHandle = jdbiFact.open()) {
             List<BangxepHangAggregate> resultIterator = null;
-            // 1. Kết nối Database Control
-            List<Config> list = ConfigService.getInstance().getListConfig();
+
             FileData fileData, fileDataMart;
             //2. Duyệt qua danh sách Config để thực hiện quá trình ETL cho từng cấu hình
             for (Config config : list) {
