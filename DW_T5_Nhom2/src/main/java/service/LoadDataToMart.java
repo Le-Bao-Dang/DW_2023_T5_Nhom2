@@ -14,8 +14,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 public class LoadDataToMart {
-
-    // Thực hiện quá trình ETL (Extract, Transform, Load)
     public static void performETL() {
         // 1. Kết nối Database Control
         List<Config> list = ConfigService.getInstance().getListConfig();
